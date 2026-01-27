@@ -1,12 +1,46 @@
-[gd_scene load_steps=3 format=3 uid="uid://0tqw03o7ao3r"]
+[gd_scene format=3 uid="uid://0tqw03o7ao3r"]
 
 [ext_resource type="Script" uid="uid://cvqco5s0rc2ey" path="res://player_1.gd" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://pk1vys61s4bq" path="res://player_2.gd" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://cyg0d1xqghqok" path="res://ui.gd" id="3_kek77"]
+[ext_resource type="Texture2D" uid="uid://cnemscm63somy" path="res://Sprite/Board/Vand.png" id="4_4c57u"]
+[ext_resource type="Texture2D" uid="uid://duqknk7mlouhh" path="res://Sprite/Board/111x111 pixels.png" id="5_efxa6"]
+[ext_resource type="Texture2D" uid="uid://chciv2d3braal" path="res://Sprite/Ships/1x2.Ship.png" id="6_dg77c"]
+[ext_resource type="Texture2D" uid="uid://c6gp0gcg1gfnt" path="res://Sprite/Ships/1x3.Ship.png" id="7_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://bsjy6fjnie1gd" path="res://Sprite/Ships/1x4.Ship.png" id="8_w48qg"]
+[ext_resource type="Texture2D" uid="uid://bhnscgq7pwes3" path="res://Sprite/Ships/1x5.Ship.png" id="9_vivmo"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=2060936579]
 
-[node name="Player1" type="Node2D" parent="."]
+[node name="Player1" type="Node2D" parent="." unique_id=1277584132]
 script = ExtResource("1_0xm2m")
 
-[node name="Player2" type="Node2D" parent="."]
+[node name="Player2" type="Node2D" parent="." unique_id=1619149278]
 script = ExtResource("2_h2yge")
+
+[node name="UI" type="Node2D" parent="." unique_id=582742199]
+script = ExtResource("3_kek77")
+
+[node name="Vand" type="Sprite2D" parent="." unique_id=1487640085]
+position = Vector2(566, 564)
+texture = ExtResource("4_4c57u")
+
+[node name="111x111Pixels" type="Sprite2D" parent="." unique_id=818341258]
+position = Vector2(567, 564)
+texture = ExtResource("5_efxa6")
+
+[node name="1x2_ship" type="Sprite2D" parent="." unique_id=746701994]
+position = Vector2(1062, 1004)
+texture = ExtResource("6_dg77c")
+
+[node name="1x3_ship" type="Sprite2D" parent="." unique_id=182259978]
+position = Vector2(842, 949)
+texture = ExtResource("7_ycdy4")
+
+[node name="1x4_ship" type="Sprite2D" parent="." unique_id=181147027]
+position = Vector2(622, 894)
+texture = ExtResource("8_w48qg")
+
+[node name="1x5_ship" type="Sprite2D" parent="." unique_id=412745134]
+position = Vector2(401, 840)
+texture = ExtResource("9_vivmo")
